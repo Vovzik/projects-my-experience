@@ -1,0 +1,44 @@
+.news {
+  &__content {
+    padding: rem(60px) 0px;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-family: 'Azoft Sans', sans-serif;
+    font-weight: 700;
+    font-size: rem(40px);
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: rem(20px);
+  }
+
+  &__slider {
+  }
+
+  &__slide {
+  }
+
+  &__img {
+  }
+
+  &__pagination {
+    margin-top: rem(40px);
+  }
+
+  @media (max-width: 480px) {
+     &__content {
+       padding: rem(40px) 0px;
+     }
+
+    &__title {
+      font-size: rem(32px);
+      text-align: center;
+    }
+
+    &__pagination {
+      margin-top: rem(30px);
+    }
+  }
+}
+

@@ -1,0 +1,77 @@
+.home {
+  &__content {
+    padding: rem(174px) 0px rem(100px);
+  }
+
+  &__title {
+    font-family: 'Azoft Sans', sans-serif;
+    font-size: rem(20px);
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: rem(40px);
+  }
+
+  &__subtitle {
+    font-family: 'Azoft Sans', sans-serif;
+    font-size: rem(68px);
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: rem(40px);
+  }
+
+  &__subtitle-text {
+    font-family: 'Azoft Sans', sans-serif;
+    font-size: rem(20px);
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: right;
+    width: rem(453px);
+    display: inline-block;
+  }
+
+  &__btn {
+    background: #FFFFFF;
+    color: #161616;
+    &:before {
+      background: url('../img/header/arrow-blue.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__subtitle {
+      font-size: rem(40px);
+    }
+  }
+
+  @media (max-width: 480px) {
+     &__content {
+       padding: rem(140px) 0px rem(60px);
+     }
+
+    &__title {
+      margin-bottom: rem(30px);
+    }
+
+    &__subtitle {
+      font-size: rem(42px);
+      margin-bottom: rem(55px);
+    }
+
+    &__subtitle-text {
+      text-align: left;
+      margin-top: rem(30px);
+      width: 100%;
+    }
+
+  }
+
+  @media (max-width: 400px) {
+    &__subtitle {
+      font-size: rem(32px);
+    }
+  }
+}

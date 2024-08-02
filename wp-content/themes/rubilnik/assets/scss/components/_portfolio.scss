@@ -1,0 +1,124 @@
+.portfolio {
+  &__content {
+    padding: rem(60px) 0px;
+  }
+
+  &__title {
+    font-family: 'Azoft Sans', sans-serif;
+    font-weight: 400;
+    font-size: rem(20px);
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: rem(20px);
+  }
+
+  &__subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(30px);
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: rem(20px);
+  }
+
+  &__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: 130%;
+    text-align: center;
+    max-width: rem(537px);
+    margin: 0 auto;
+    margin-bottom: rem(60px);
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: rem(20px) rem(14px);
+    margin-bottom: rem(60px);
+  }
+
+  &__item {
+
+  }
+
+  &__item-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: rem(16px);
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: rem(8px);
+  }
+
+  &__item-box {
+    border-radius: rem(30px);
+    overflow: hidden;
+    height: rem(269px);
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.4s ease-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link {
+    margin: 0 auto;
+    display: block;
+    width: rem(286px);
+  }
+
+  @media (max-width: 1199px) {
+    &__item-box {
+      height: rem(229px);
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__content {
+      padding: rem(40px) 0px;
+    }
+
+    &__title,
+    &__subtitle {
+      margin-bottom: rem(15px);
+    }
+
+    &__text {
+      margin-bottom: rem(46px);
+    }
+
+    &__item-box {
+      border-radius: rem(25px);
+    }
+
+    &__items {
+      grid-gap: rem(25px) rem(10px);
+      margin-bottom: rem(50px);
+    }
+
+    &__item-box {
+      height: rem(192px);
+    }
+  }
+}
+

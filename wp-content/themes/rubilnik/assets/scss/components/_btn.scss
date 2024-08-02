@@ -1,0 +1,36 @@
+.btn {
+  background: #2F20DC;
+  border-radius: rem(48px);
+  padding: rem(19px) rem(68px) rem(19px) rem(30px);
+  font-family: 'Manrope', sans-serif;
+  font-size: rem(16px);
+  font-weight: 500;
+  line-height: 130%;
+  position: relative;
+  &:before {
+    content: '';
+    width: rem(36px);
+    height: rem(36px);
+    background: url("../img/header/arrow.svg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: rem(12px);
+    transition: 0.4s ease-out;
+  }
+
+  &:hover:before {
+    transform: translate(0, -50%) rotate(45deg);
+  }
+
+  &--white {
+    background: #FFFFFF;
+    color: #161616;
+    &:before {
+      background: url("../img/header/arrow-blue.svg") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+}

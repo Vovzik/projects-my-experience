@@ -1,0 +1,117 @@
+.code-design-promote {
+  &__content {
+    padding: rem(60px) 0px;
+    border-top: rem(0.5px) solid #2E2E2E;
+  }
+
+  &__title {
+    font-family: 'Azoft Sans', sans-serif;
+    font-size: rem(40px);
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: rem(40px);
+  }
+
+  &__title-border {
+    text-decoration: underline;
+  }
+
+
+  &__wpRedactor {
+    margin-bottom: rem(61px);
+    p {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 400;
+      font-size: rem(18px);
+      line-height: 130%;
+      max-width: rem(899px);
+      &:not(:last-child) {
+        margin-bottom: rem(30px);
+      }
+      span {
+        font-family: 'Azoft Sans', sans-serif;
+        font-weight: 400;
+        font-size: rem(20px);
+        line-height: 130%;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: rem(30px);
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__box {
+    width: rem(85px);
+    margin-right: rem(25px);
+  }
+
+  &__info {
+    width: rem(234px);
+    padding-top: rem(12px);
+  }
+
+  &__subtitle {
+    font-family: 'Azoft Sans', sans-serif;
+    font-weight: 700;
+    font-size: rem(24px);
+    line-height: 130%;
+    margin-bottom: rem(15px);
+  }
+
+  &__subtext {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 130%;
+  }
+
+  @media (max-width: 1199px) {
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: rem(10px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: rem(15px);
+    }
+
+    &__box {
+      flex: 0 0 auto;
+    }
+
+    &__info {
+      width: auto;
+      flex-grow: 1;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__content {
+      padding: rem(40px) 0px;
+    }
+    &__title {
+      font-size: rem(32px);
+      margin-bottom: rem(15px);
+    }
+
+    &__wpRedactor {
+      margin-bottom: rem(30px);
+    }
+  }
+}
+

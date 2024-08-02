@@ -1,0 +1,159 @@
+.theme-light {
+  .header__content,
+  .header__catalog-menu {
+    background: #FFFFFF;
+  }
+
+  .header__burger-item {
+    background: #161616;
+  }
+
+  a,
+  .form__title {
+    color: #161616;
+  }
+
+  .form__input {
+    border: 0.0625rem solid #161616;
+    color: #161616;
+
+    &::placeholder {
+      color: #161616;
+    }
+  }
+
+
+  .header__mail:before {
+    background: url('../img/header/mail-light.svg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .header__phone:before {
+    background: url('../img/header/phone-light.svg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .header__title:before {
+    background: url('../img/header/map-light.svg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .header__social:nth-child(1):before {
+    background: url('../img/header/vk-light.svg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .header__social:nth-child(2):before {
+    background: url('../img/header/instagram-light.svg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .header__social:nth-child(3):before {
+    background: url('../img/header/telegram-light.svg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .header__link,
+  .btn {
+    color: #fff;
+  }
+
+  .btn {
+    background: #2F20DC;
+  }
+
+  .btn:before {
+    background: url('../img/header/arrow.svg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .partners__img {
+    filter: brightness(0%);
+  }
+
+  .ticker__content:after {
+    background: #FFFFFF;
+    box-shadow: rem(15px) 0px rem(50px) 0px #0000001A;
+  }
+
+  .ticker__content:before {
+    background: #FFFFFF;
+    box-shadow: rem(-15px) 0px 50px 0px #0000001A;
+  }
+
+  .ticker__item--stroke {
+    color: #FFFFFF;
+    text-shadow: 2px 0 #161616,
+    -2px 0 #161616,
+    0 2px #161616,
+    0 -2px #161616,
+    1px 1px #161616,
+    -1px -1px #161616,
+    1px -1px #161616,
+    -1px 1px #161616;
+  }
+
+  .form__inner {
+    background: url('../img/form/decor-light.png') no-repeat;
+    background-size: 70rem 100%;
+  }
+
+  .answering-questions__question {
+    background: url('../img/answering-questions/question-light.svg') center right no-repeat;
+  }
+
+  .answering-questions__question:before {
+    background: url('../img/answering-questions/horizontal-light.svg') no-repeat;
+  }
+
+  .answering-questions__question:after {
+    background: url('../img/answering-questions/vertical-light.svg') no-repeat;
+  }
+
+  .pagination .swiper-pagination-bullet-active {
+    background: #1A1A1A;
+  }
+
+  .footer__text-logo,
+  .footer__year {
+    color: #FFFFFF;
+  }
+
+  .footer__content-bottom {
+    background: #161616;
+  }
+
+  .header__content:before {
+    background: url('../img/body/decor-left-light.jpg') no-repeat;
+    background-size: 100% 100%;
+    opacity: 1;
+  }
+
+  .header__content:after {
+    background: url('../img/body/decor-left-light.jpg') no-repeat;
+    background-size: 100% 100%;
+    opacity: 1;
+  }
+
+  .code-design-promote__content {
+    border-color: #D1D1D1;
+  }
+
+  .polosa-body {
+    background: #D1D1D1;
+    opacity: 1;
+  }
+
+  .progress-bar__polosa,
+  .progress-bar__polosa:before {
+    background: #161616;
+  }
+
+  .progress-bar__polosa:after {
+    background: rgba(22, 22, 22, 0.53);
+  }
+
+  .progress-bar__btn {
+    background: #4334E1 url('../img/progressbar/arrow.svg') no-repeat center;
+  }
+}

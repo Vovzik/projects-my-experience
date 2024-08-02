@@ -1,0 +1,159 @@
+.form {
+  &__content {
+    padding: rem(60px) 0px;
+  }
+
+  &__inner {
+    border-radius: rem(30px);
+    padding: rem(60px);
+    background: url('../img/form/decor.png') no-repeat;
+    background-size: rem(1120px) 100%;
+  }
+
+  &__title {
+    font-family: 'Azoft Sans', sans-serif;
+    font-weight: 700;
+    font-size: rem(48px);
+    line-height: 130%;
+    color: #FFFFFF;
+    max-width: rem(592px);
+    margin-bottom: rem(10px);
+  }
+
+  &__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: 130%;
+    max-width: rem(613px);
+    margin-bottom: rem(50px);
+  }
+
+  &__input {
+    border-radius: rem(51px);
+    border: rem(1px) solid #FFFFFF;
+    padding: 0px rem(30px);
+    height: rem(60px);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: rem(16px);
+    line-height: 130%;
+    color: #FFFFFF;
+    transition: 0.4s ease-out;
+    width: 100%;
+    &::placeholder {
+      color: #FFFFFF;
+    }
+    &:focus {
+      border-color: #2F20DC;
+      outline: rem(1px) solid #2F20DC;
+    }
+  }
+
+  .wpcf7-form {
+    display: flex;
+    align-items: flex-start;
+    max-width: rem(897px);
+    margin-bottom: rem(10px);
+  }
+
+  .wpcf7-form-control-wrap {
+    margin-right: rem(20px);
+  }
+
+
+  &__subtext {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(14px);
+    line-height: 130%;
+    padding-left: rem(30px);
+  }
+
+  &__text-link {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .wpcf7-not-valid-tip {
+    font-size: rem(14px);
+    margin-top: rem(5px);
+    padding-left: rem(30px);
+  }
+
+  @media (max-width: 991px) {
+    .wpcf7-form {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      max-width: 100%;
+      margin-bottom: rem(10px);
+    }
+
+    &__inner {
+      background: url('../img/form/decor.png') no-repeat;
+      background-size: rem(850px) 100%;
+    }
+
+    .wpcf7-form-control-wrap {
+      width: 100%;
+      margin: 0px;
+      margin-bottom: rem(15px);
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+     &__title {
+       font-size: rem(36px);
+     }
+
+    &__inner {
+      padding: rem(40px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__content {
+      padding: rem(40px) 0px;
+    }
+
+    &__inner {
+      padding: rem(40px) rem(15px);
+    }
+
+    &__inner {
+      background: url('../img/form/decor-mobail.png') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &__title {
+      font-size: rem(29px);
+      text-align: center;
+      margin-bottom: rem(15px);
+    }
+
+    &__text {
+      font-size: rem(18px);
+      text-align: center;
+      margin-bottom: rem(30px);
+    }
+
+    &__subtext {
+      text-align: center;
+    }
+  }
+}
+
+.wpcf7-spinner,
+.wpcf7-response-output {
+  display: none;
+}
+
+
+

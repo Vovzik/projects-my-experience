@@ -1,0 +1,90 @@
+.footer-menu {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 4;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(0px) rem(10px);
+  border-top: rem(2px) solid #D8D8D8;
+  background: #161616;
+  display: none;
+
+  &__item {
+    padding-top: rem(43px);
+    padding-bottom: rem(10px);
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(12px);
+    line-height: 130%;
+    transition: 0.4s ease-out;
+    border-top: rem(2px) solid #D8D8D8;
+    margin-top: rem(-2px);
+    &:hover,
+    &.active {
+      color: #2F20DC;
+      border-color: #2F20DC;
+    }
+    &:before {
+      content: '';
+      width: rem(32px);
+      height: rem(32px);
+      position: absolute;
+      top: rem(10px);
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    &:nth-child(1):before {
+      background: url("../img/footer-menu/1.svg") no-repeat ;
+      background-size: 100% 100%;
+      transition: 0.4s ease-out;
+    }
+    &:nth-child(2):before {
+      background: url("../img/footer-menu/2.svg") no-repeat ;
+      background-size: 100% 100%;
+      transition: 0.4s ease-out;
+    }
+    &:nth-child(3):before {
+      background: url("../img/footer-menu/3.svg") no-repeat ;
+      background-size: 100% 100%;
+      transition: 0.4s ease-out;
+    }
+    &:nth-child(4):before {
+      background: url("../img/footer-menu/4.svg") no-repeat ;
+      background-size: 100% 100%;
+      transition: 0.4s ease-out;
+    }
+
+    &:nth-child(1):hover:before,
+    &:nth-child(1).active:before {
+      background: url("../img/footer-menu/1-blue.svg") no-repeat ;
+      background-size: 100% 100%;
+    }
+    &:nth-child(2):hover:before,
+    &:nth-child(2).active:before {
+      background: url("../img/footer-menu/2-blue.svg") no-repeat ;
+      background-size: 100% 100%;
+    }
+    &:nth-child(3):hover:before,
+    &:nth-child(3).active:before {
+      background: url("../img/footer-menu/3-blue.svg") no-repeat ;
+      background-size: 100% 100%;
+    }
+    &:nth-child(4):hover:before,
+    &:nth-child(4).active:before {
+      background: url("../img/footer-menu/4-blue.svg") no-repeat ;
+      background-size: 100% 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    & {
+      display: flex;
+    }
+
+
+  }
+}

@@ -1,0 +1,71 @@
+.progress-bar {
+  width: rem(166px);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: rem(400px);
+  right: 0px;
+  z-index: 5;
+  transform: rotate(-90deg);
+
+  &__btn {
+    border-radius: 50%;
+    width: rem(32px);
+    height: rem(32px);
+    background: #2f20dca1 url("../img/progressbar/arrow.svg") no-repeat center;
+    margin-right: rem(5px);
+    transition: 0.4s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__box {
+    flex-grow: 1;
+    transform: rotate(180deg);
+  }
+
+  &__polosa {
+    width: 0%;
+    height: rem(1px);
+    background: #FFFFFF;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: rem(9px);
+      height: rem(9px);
+      border-radius: 50%;
+      background: #FFFFFF;
+      position: absolute;
+      right: rem(-2px);
+      top: rem(-4px);
+    }
+
+    &:after {
+      content: '';
+      width: rem(90px);
+      height: 100%;
+      background: #ffffff54;
+      position: absolute;
+      top: rem(0px);
+      left: rem(0px);
+      z-index: -1;
+    }
+  }
+
+  &__scroll {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(12px);
+    line-height: 130%;
+    margin-left: rem(9px);
+  }
+
+  @media (max-width: 1400px) {
+    & {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.polosa-body {
+  position: absolute;
+  top: 0px;
+  left: 55%;
+  transform: translate(-50%, 0%);
+  width: rem(0.5px);
+  background: #fefefe;
+  z-index: 11;
+  opacity: 0.1;
+
+  @media (max-width: 1400px) {
+    & {
+      display: none;
+    }
+  }
+}

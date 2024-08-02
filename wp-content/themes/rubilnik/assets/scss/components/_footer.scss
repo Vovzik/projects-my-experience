@@ -1,0 +1,309 @@
+.footer {
+  &__content {
+    padding: rem(70px) 0px rem(30px);
+    background: #F2F2F2;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__address {
+    width: rem(175px);
+    margin-right: rem(48px);
+  }
+
+  &__title {
+    font-family: 'Azoft Sans', sans-serif;
+    font-weight: 700;
+    font-size: rem(14px);
+    line-height: 130%;
+    color: #212121;
+    margin-bottom: rem(30px);
+  }
+
+  &__map {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 130%;
+    color: #212121;
+    padding-left: rem(30px);
+    background: url("../img/footer/map.svg") no-repeat top left;
+    margin-bottom: rem(10px);
+  }
+
+  &__location {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 130%;
+    color: #212121;
+    margin-bottom: rem(20px);
+  }
+
+  &__subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: rem(16px);
+    line-height: 130%;
+    color: #212121;
+    margin-bottom: rem(10px);
+  }
+
+  &__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 130%;
+    color: #212121;
+  }
+
+  &__contacts {
+    width: rem(200px);
+    margin-right: rem(70px);
+  }
+
+  &__mail,
+  &__phone {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: rem(18px);
+    line-height: 130%;
+    color: #212121;
+    padding-left: rem(30px);
+    background: url('../img/footer/mail.svg') no-repeat 0px rem(2px);
+    margin-bottom: rem(20px);
+    transition: 0.4s ease-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__phone {
+    background: url('../img/footer/phone.svg') no-repeat 0px rem(2px);
+  }
+
+  &__navigation {
+    width: rem(150px);
+    margin-right: rem(52px);
+  }
+
+  &__list {
+    li {
+      &:not(:last-child) {
+        margin-bottom: rem(10px);
+      }
+    }
+
+    a {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 400;
+      font-size: rem(16px);
+      line-height: 130%;
+      color: #212121;
+      transition: 0.4s ease-out;
+      &:hover,
+      &[aria-current="page"] {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__contact-form {
+    width: rem(429px);
+  }
+
+  &__commerce {
+    font-family: 'Azoft Sans', sans-serif;
+    font-weight: 400;
+    font-size: rem(24px);
+    line-height: 130%;
+    color: #212121;
+  }
+
+  &__link {
+    color: #212121;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__inner-center {
+    margin-top: rem(60px);
+    display: flex;
+    align-items: center;
+  }
+
+  &__follow-us {
+    font-family: 'Azoft Sans', sans-serif;
+    font-weight: 700;
+    font-size: rem(14px);
+    line-height: 130%;
+    color: #212121;
+    text-transform: uppercase;
+    padding-right: rem(90px);
+    margin-right: rem(31px);
+    position: relative;
+    &:before {
+      content: '';
+      width: rem(60px);
+      height: rem(1px);
+      background: #565656;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__social {
+    font-family: 'Azoft Sans', sans-serif;
+    font-weight: 700;
+    font-size: rem(14px);
+    line-height: 130%;
+    color: #212121;
+    text-transform: uppercase;
+    padding-left: rem(23px);
+    transition: 0.4s ease-out;
+    &:not(:last-child) {
+      margin-right: rem(15px);
+    }
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+
+  &__social--vk {
+    background: url("../img/footer/vk.svg") no-repeat left top;
+  }
+
+  &__social--inst {
+    background: url("../img/footer/instagram.svg") no-repeat left top;
+  }
+
+  &__social--tg {
+    background: url("../img/footer/telegram.svg") no-repeat left top;
+  }
+
+  &__content-bottom {
+    padding: rem(30px) 0px;
+  }
+
+  &__inner-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text-logo {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: rem(14px);
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+
+  &__text-span {
+    padding-right: rem(110px);
+    margin-right: rem(24px);
+    position: relative;
+    &:before {
+      content: '';
+      width: rem(80px);
+      height: rem(1px);
+      background: #565656;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__year {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: rem(14px);
+    line-height: 130%;
+  }
+
+  @media (max-width: 991px) {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__contact-form {
+      margin-top: rem(30px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__navigation {
+      margin-top: rem(30px);
+    }
+
+    &__inner-center {
+      flex-wrap: wrap;
+    }
+    &__contacts {
+      margin-right: 0px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__content {
+      padding: rem(40px) 0px;
+    }
+
+    &__content-bottom {
+     margin-bottom: rem(71px);
+    }
+
+    &__phone {
+      background: url('../img/footer/phone.svg') no-repeat 0px rem(1px);
+    }
+
+    &__follow-us {
+      padding-right: 0px;
+      margin: 0px;
+      padding-bottom: rem(16px);
+      margin-bottom: rem(15px);
+      width: 100%;
+      &:before {
+        top: auto;
+        right: auto;
+        transform: none;
+        left: 0px;
+        bottom: 0px;
+      }
+    }
+
+    &__mail,
+    &__phone {
+      font-size: rem(16px);
+    }
+
+    &__address {
+      margin-right: rem(19px);
+    }
+
+    &__text-span {
+      padding-right: rem(44px);
+      margin-right: rem(10px);
+      position: relative;
+      &:before {
+        width: rem(33px);
+      }
+    }
+  }
+
+  @media (max-width: 413px) {
+    &__contacts {
+      margin-top: rem(30px);
+    }
+  }
+}

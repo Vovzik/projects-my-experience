@@ -1,0 +1,23 @@
+.brief {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: rem(15px);
+  line-height: 130%;
+  text-decoration: underline;
+  position: fixed;
+  top: rem(400px);
+  left: rem(20px);
+  transition: 0.4s ease-out;
+  transform: rotate(-90deg);
+  z-index: 5;
+  &:hover {
+    opacity: 0.6;
+  }
+
+
+  @media (max-width: 1400px) {
+    & {
+      display: none;
+    }
+  }
+}

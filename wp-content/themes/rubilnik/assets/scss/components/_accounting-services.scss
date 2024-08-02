@@ -1,0 +1,93 @@
+.accounting-services {
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: rem(60px) rem(26px);
+    background: url("../img/accounting-services/top.png") no-repeat top left / 100%,
+                url("../img/accounting-services/bottom.png") no-repeat bottom left / 100%;
+  }
+
+  &__info {
+    width: rem(609px);
+    margin-right: rem(48px);
+  }
+
+  &__title {
+    font-family: 'Azoft Sans', sans-serif;
+    font-weight: 700;
+    font-size: rem(48px);
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: rem(33px);
+  }
+
+  &__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(8px);
+  }
+
+  &__text-discount {
+    font-weight: 800;
+    font-size: rem(48px);
+    margin-left: rem(12px);
+    line-height: 140%;
+  }
+
+  &__subtext {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: 130%;
+    margin-bottom: rem(50px);
+  }
+
+
+  &__images {
+    width: rem(463px);
+  }
+
+  @media (max-width: 991px) {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__info {
+      width: 100%;
+      margin: 0px;
+      margin-bottom: rem(30px);
+    }
+
+    &__images {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__inner {
+      padding: rem(40px) rem(15px);
+      background: url("../img/accounting-services/top-mobail.svg") no-repeat top left / 100%,
+      url("../img/accounting-services/bottom-mobail.svg") no-repeat bottom left / 100%;
+    }
+
+    &__title {
+      font-size: rem(32px);
+      text-align: center;
+      margin-bottom: rem(15px);
+    }
+
+    &__btn {
+      width: 100%;
+    }
+
+    &__subtext {
+      margin-bottom: rem(30px);
+    }
+  }
+}
+
