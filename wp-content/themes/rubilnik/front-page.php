@@ -9,5 +9,5 @@
         <?php get_template_part('template-parts/answering-questions') ?>
         <?php get_template_part('template-parts/accounting-services') ?>
         <?php get_template_part('template-parts/news') ?>
-    </main>
+    </main> 
 <?php get_footer(); ?>
